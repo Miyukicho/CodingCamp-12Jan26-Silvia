@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,76 +14,194 @@
 
 <body>
     <!-- Header Content -->
-    <header class="main-header p-[8px]">
+    <header class="main-header p-2 flex items-center justify-between">
         <!-- Logo -->
-         <div class="logo"></div>
+         <div class="logo">
+            <a href="index.html">
+            <img src="MC Logo.jpg" alt="Silvia Logo" class="w-16 h-16"/>
+            </a>
+         </div>
 
          <!-- Navigation Menu -->
-         <nav class="flex">
-            <a class="border p-2 rounded" href="#home-page">Home</a>
-            <a class="border p-2 rounded" href="#our-profile">Our Profile</a>
-            <a class="border p-2 rounded" href="#portfolio-page">Portfolio</a>
-            <a class="border p-2 rounded" href="#message-us-page">Message Us</a>
+         <nav>
+            <ul class="nav-menu hidden md:flex gap-6">
+                <li><a href="#">Home</a></li>
+                <li><a href="#my-profile">My Profile</a></li>
+                <li><a href="#experience-page">Experiences</a></li>
+                <li><a href="#contact-me-page">Contact Me</a></li>
+            </ul>
          </nav>
     </header>
 
-    <hr/>
 
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-         <section id="home-page" class="min-h-[500px] text-center content-center">
+         <section id="home-page" class="home">
+            <div class="home-content">
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Silvia's Portfolio</h2>
             <p class="mt-2">Discover my projects, skills, and experiences.</p>
+            </div>
             </section>
 
-            <hr/>
 
-            <!-- Our Profile Page -->
-            <section id="our-profile" class="min-h-[500px] text-center content-center">
-                <h2 class="text-xl font-bold">Our My Profile</h2>
-                <p class="mt-2">Learn more about Silvia and her journey.</p>
+            <!-- My Profile Page -->
+            <section id="my-profile" class="profile px-6 md:px-12">
+                <div class="profile-text">
+                <h1 class="text-xl font-bold">My Profile</h1>
+                
+                <h2 class="text-lg font-semibold mt-4">About Me</h2>
+                <p class="mt-2">A versatile professional working at the intersection of strategy, creativity, and execution. <a href="#experience-page" class="underline hover:no-underline">Experienced</a> across marketing, digital initiatives, operations, and community management, with a strong focus on clarity, structure, and measurable impact.</p>
+                <p class="mt-2">Backed by intensive training in <b>Digital Marketing, Data Science, Data Analysis, and UI/UX Research</b>, bringing a data-informed and user-centered approach to every project. Selected as an <b>Indonesian Delegate</b> at the <b>World Youth Festival 2024 in Russia</b>, reflecting global exposure, cross-cultural collaboration, and adaptability in dynamic environments. Driven by continuous growth, accountability, and delivering work that creates real value.</p>
+                </div>
+
+                <div class="profile-image">
+            <img src="MC.jpeg" alt="Profile Picture"/>
+                </div>
             </section>
 
-            <hr/>
 
             <!-- Portfolio Page -->
-            <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-                <h2 class="text-xl font-bold">Portfolio</h2>
-                <p class="mt-2">Explore my latest works and projects.</p>
+            <section id="experience-page" class="snap-section experience">
+                <div class="experience-inner">
+                <h2 class="section-title text-xl font-bold">Experiences</h2>
+                <p class="subtitle text-center font-semibold">Explore my latest works and projects.</p>
+
+                <div class="slider-wrapper">
+                    <button class="nav-btn prev" onclick="prevSlide()">‹</button>
+
+                    <div class="slider">
+                        <div class="slide">
+                            <h3>Administrative Staff</h3>
+                            <span>Consumer Goods Company - 2015</span>
+                            <p>Developed and updated spreadsheets and databases to track, analyze and report on performance and sales data. <br> Managed office inventory by restocking supplies and placing purchase orders to maintain adequate stock levels. <br> Reviewed clients' tax filing papers thoroughly to determine eligibility for additional tax credits or deductions.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Production Assistant</h3>
+                            <span>Japan Company - 2016</span>
+                            <p>Maintained maximum productivity by properly sorting project components on work tables. <br> Created timetables and production commitments using data from sales forecasts. <br> Created and updated physical records and digital files to maintain current, accurate and compliant documentation.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Administration Officer</h3>
+                            <span>Garment Company - 2016</span>
+                            <p>Maintained accurate, current and compliant financial records by monitoring and addressing variances <br> Corrected any data entry error to prevent later issues such as duplication or data degradation. Also, verified accuracy and validity of data entered into databases <br> Reviewed clients' tax filing papers thoroughly to determine eligibility for additional tax credits or deductions.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Order Processing Jr.</h3>
+                            <span>Oil & Gas Company - 2018</span>
+                            <p>Informed supervisors and coworkers of inventory needs and double-checked supplies before completing customer orders. <br> Double-checked customer orders and information before filling out order forms to prevent unnecessary delays and errors. <br> Identified, collected and analyzed cost data to establish performance metrics. <br> Contacted customers to collect payments and verify or add to existing information, consistently providing timely, accurate and customer-oriented service. <br> Double-checked customer orders and information before filling out order forms to prevent unnecessary delays and errors.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Brand Ambassador</h3>
+                            <span>Blockchain Company - 2019</span>
+                            <p>Wrote media alerts and developed social media campaigns to promote Products and Services. <br> Communicated product value, quality and style to educate and entice potential customers. <br> Increased brand awareness through event marketing, demonstrations, sales and brand promotion. <br> Identified issues, analyzed information and provided solutions to problems. <br> Demonstrated respect, friendliness and willingness to help wherever needed.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Operations</h3>
+                            <span>Blockchain Company - 2020</span>
+                            <p>Applied excellent problem-solving, process development, and strategic implementation skills to lead and support all areas of operations. <br> Integrated marketing plans to reach a wider audience and push business prospects closer to conversion. <br> Defined strategic goals to drive resource allocation, capability requirements and budgeting activities. <br> Developed operational processes to help the company adapt to market change. <br> Leveraged meeting minutes to measure progress and accountability.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Community & Social Media Manager</h3>
+                            <span>Blockchain Company - 2020</span>
+                            <p>Planned and executed promotional activities to drive community engagement and increase occupancy numbers. <br> Gained trust and feedback useful in collaborating with business leaders to devise solutions. <br> Organized and executed the launch of 5 communities. <br> Managed community on social media within established cost constraints and promoted & communicated with the community members to seek feedback (Twitter, Instagram, Facebook, Discord, Medium). <br> Developed public relations campaigns, articles, and newsletters. <br> Streamlined operations by communicating efficiently with clients, keeping meticulous records, budget management, and internal collaboration.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Marketing Executive</h3>
+                            <span>Beauty Care Company - 2022</span>
+                            <p>Developed and executed marketing programs and general business solutions resulting in increased company exposure, customer traffic and elevated sales numbers. <br> Identified value propositions and key messages for company marketing campaigns to preserve company integrity by monitoring consistency and quality of marketing content. <br> Traveled to promote current programs and drive marketing through trade shows and industry conferences. <br> Researched industry and marketplace trends to develop marketing solutions & enhance business operations and worked with teams to enhance products based on customer interest data. <br> Analyzed consumer usage patterns to identify trends and target key demographics.</p>
+                        </div>
+
+                        <div class="slide">
+                            <h3>Marketing Executive</h3>
+                            <span>Property Company - 2024</span>
+                            <p>Developed and executed marketing strategies, including market research and targeted digital campaigns, to increase brand awareness, sales performance, and client acquisition. <br> Built and maintained strong client relationships through professional communication, personalized service, and end-to-end support, resulting in repeat business and customer loyalty. <br> Assisted clients throughout the full property acquisition process, including property selection, negotiations, contracts, financing coordination, inspections, and closing. <br> Optimized marketing budgets and campaign performance through data analysis, and performance evaluation to maximize ROI. <br> Expanded business network and client base through strategic partnerships, industry networking events, referrals, and after-sales support services.</p>
+                        </div>
+                    </div>
+
+                    <button class="nav-btn next" onclick="nextSlide()">›</button>
+                </div>
+                </div>
                 </section>
 
-            <hr/>
+
 
             <!-- Message Us Page -->
-             <section id="message-us-page" class="min-h-[500px] mx-8">
-                <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Get in touch for collaborations or inquiries.</p>
+             <section id="contact-me-page" class="contact mx-auto max-w-5xl px-4 md:px-6 py-10 pt-24">
+                <header class="mb-4">
+                <h2 class="text-xl font-bold">Contact me</h2>
+                <p class="mt-1 text-sm">Get in touch for collaborations or inquiries.</p>
                 </header>
 
-                <form>
-                    <div class="mb-4">
-                        <label class="block mb-2" for="name">Name:</label>
-                        <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
+
+                <form id="messageForm" class="space-y-3 max-w-md">
+                    <div>
+                        <label class="block mb-1 text-sm" for="name">Name:</label>
+                        <input class="w-full p-2 text-sm border border-black rounded bg-white" type="text" id="name">
+                        <p class="text-red-500 text-xs" id="errName"></p>
                     </div>
-                    <div class="mb-4">
-                        <label class="block mb-2" for="email">Email:</label>
-                        <input class="w-full p-2 border rounded" type="email" id="email" name="email" required>
+
+                    <div>
+                        <label class="block mb-1 text-sm" for="tanggal lahir">Tanggal Lahir:</label>
+                        <input class="w-full p-2 text-sm border border-black rounded bg-white" type="date" id="birth">
+                        <p class="text-red-500 text-xs" id="errBirth"></p>
                     </div>
-                    <div class="mb-4">
-                        <label class="block mb-2" for="message">Message:</label>
-                        <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+
+                    <div>
+                        <label class="block mb-1 text-sm">Jenis Kelamin:</label>
+                        <div class="flex gap-4 text-sm">
+                            <label>
+                                <input type="radio" name="gender" value="Laki - Laki"> Laki-Laki
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                            </label>
+                        </div>
+                        <p class="text-red-500 text-xs" id="errGender"></p>
                     </div>
-                    <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+
+                    <div class="mb-4">
+                        <label class="block mb-1 text-sm" for="email">Email:</label>
+                        <input class="w-full p-2 text-sm border rounded bg-white" type="email" id="email">
+                        <p class="text-red-500 text-xs" id="errEmail"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block mb-1 text-sm" for="message">Message:</label>
+                        <textarea class="w-full p-2 text-sm border rounded bg-white" id="message" rows="4"></textarea>
+                        <p class="text-red-500 text-xs" id="errMessage"></p>
+                    </div>
+
+                    <button class="w-full p-2 border rounded bg-blue-600 text-white" type="button" id="submitBtn">Submit</button>
                 </form>
-            </section>
+
+                <div class="flex md:justify-center items-center min-h-[300px]">
+                    <div id="resultBox" class="border p-4 hidden">
+                    <p class="text-sm mb-1" id="currentTime"></p>
+
+                    <p><b>Nama :</b> <span id="resName"></span></p>
+                    <p><b>Tanggal Lahir :</b> <span id="resBirth"></span></p>
+                    <p><b>Jenis Kelamin :</b> <span id="resGender"></span></p>
+                    <p><b>Email :</b> <span id="resEmail"></span></p>
+                    <p><b>Pesan :</b> <span id="resMessage"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
 
     <!-- Footer Content -->
     <footer>
-        <p class="text-center p-4 bg-gray-200">© 2026 Silvia's Portfolio. All rights reserved.</p>
+        <p class="text-center p-4 bg-transparent">© 2026 Silvia's Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- Javascript External -->
